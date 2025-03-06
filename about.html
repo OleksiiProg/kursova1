@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Про нас</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <p class="header__logo-p">Traveloka</p>
+          <ul class="nav__ul nav-menu">
+            <li class="ul__li">
+              <a href="index.html" class="ul__li-a">Головна</a>
+            </li>
+
+            <li class="ul__li">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn ul__li-a">
+                  Напрямки
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <ul class="dropdown__ul">
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Європа</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li>
+                              <a href="country.html?name=Ukraine">Україна</a>
+                            </li>
+
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=France"
+                                class="inner__dropdown__li-a"
+                                >Франція</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Italy"
+                                class="inner__dropdown__li-a"
+                                >Італія</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Азія</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=China"
+                                class="inner__dropdown__li-a"
+                                >Китай</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Japan"
+                                class="inner__dropdown__li-a"
+                                >Японія</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Korea"
+                                class="inner__dropdown__li-a"
+                                >Корея</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Африка</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Morocco"
+                                class="inner__dropdown__li-a"
+                                >Марокко</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Tunisia"
+                                class="inner__dropdown__li-a"
+                                >Туніс</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Південна Америка</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Brazil"
+                                class="inner__dropdown__li-a"
+                                >Бразилія</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Peru"
+                                class="inner__dropdown__li-a"
+                                >Перу</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Північна Америка</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=USA"
+                                class="inner__dropdown__li-a"
+                                >США</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <a
+                        href="country.html?name=Australia"
+                        class="dropdown__li-a"
+                        >Австралія</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="ul__li">
+              <a href="buy.html" class="ul__li-a">Замовити</a>
+            </li>
+            <li class="ul__li">
+              <a href="about.html" class="ul__li-a">Про нас</a>
+            </li>
+            <li class="ul__li">
+              <a href="contact.html" class="ul__li-a">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h1 class="main__h1">
+          Ми віримо, що кожна подорож — це можливість відкрити щось нове,
+          поглибити знання про світ і створити спогади, які залишаться з вами
+          назавжди. Наше завдання — забезпечити вам не лише подорожі, але й
+          незабутні враження.
+        </h1>
+
+        <div class="main__visia hidden">
+          <h2 class="main__h2">Наші цінності:</h2>
+          <ul class="visia__ul">
+            <li class="visia__ul-li">Швидкі та зручні подорожі</li>
+            <li class="visia__ul-li">Доступні ціни за квитки</li>
+            <li class="visia__ul-li">Проїзд по найгарнішим місцям світу</li>
+            <li class="visia__ul-li">Гарантуємо безпеку ваших речей</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Поле для пошуку -->
+      <input
+        type="text"
+        id="teamSearchInput"
+        placeholder="Пошук за ім'ям..."
+        class="search__input"
+      />
+
+      <section class="section__team">
+        <div class="container">
+          <h2 class="our__team">Наша команда:</h2>
+          <div class="our-team__items">
+            <div class="our-team__item">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="images/oleksii.png" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Олексій Десятник</h2>
+                <p class="description">
+                  SEO. Також є керівником відділу маркетингу з понад 10-річним
+                  досвідом у галузі.
+                </p>
+                <a
+                  href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA"
+                  class="button"
+                  target="_blank"
+                  >View More</a
+                >
+              </div>
+            </div>
+
+            <div class="our-team__item">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="images/vlad.png" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Влад Дмитрик</h2>
+                <p class="description">
+                  Експерт з верстки макетів з багаторічним досвідом у створенні
+                  сайтів. Відповідальний за всю технічну складову
+                </p>
+                <a
+                  href="https://www.youtube.com/@PewDiePie"
+                  class="button"
+                  target="_blank"
+                  >View More</a
+                >
+              </div>
+            </div>
+
+            <div class="our-team__item">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="images/angelin.png" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Ангеліна Коцубей</h2>
+                <p class="description">
+                  Менеджер з бронювання, відповідальна за забезпечення найкращих
+                  пропозицій для оренди готелів та організацію комфортного
+                  проживання.
+                </p>
+                <a
+                  href="https://www.youtube.com/@PresidentGovUa"
+                  class="button"
+                  target="_blank"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__left">
+            <ul>
+              <li>
+                <a class="footer__li-a" href="">TravelokaUA 2024-2024</a>
+              </li>
+              <li><a class="footer__li-a" href="">We want your money!</a></li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/zelenskyy_official/"
+                  class="footer__li-a"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/zelenskyy.official/?locale=ru_RU"
+                  class="footer__li-a"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@PresidentGovUa"
+                  class="footer__li-a"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="country.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        document.querySelectorAll(".hidden").forEach((element) => {
+          observer.observe(element);
+        });
+      });
+
+      const teamSearchInput = document.getElementById("teamSearchInput");
+      const teamItems = document.querySelectorAll(".our-team__item");
+
+      // Додаємо подію для фільтрації членів команди при введенні в поле пошуку
+      teamSearchInput.addEventListener("input", function () {
+        const searchText = teamSearchInput.value.toLowerCase();
+
+        teamItems.forEach((item) => {
+          const name = item.querySelector(".name").innerText.toLowerCase();
+
+          // Перевіряємо, чи містить ім'я введений текст
+          if (name.includes(searchText)) {
+            item.style.display = "block"; // Показуємо елемент, якщо є збіг
+          } else {
+            item.style.display = "none"; // Приховуємо елемент, якщо немає збігу
+          }
+        });
+      });
+    </script>
+
+    <style>
+      /* Стили для поля поиска */
+      .search__input {
+        margin-top: 20px;
+        margin: 150px;
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      /* Стилі для секції "Наша команда" */
+      .our-team__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .our-team__item {
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: calc(33.333% - 20px);
+        box-sizing: border-box;
+        display: block; /* Щоб кожен елемент відображався блоком */
+      }
+    </style>
+  </body>
+</html>

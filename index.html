@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="burger.css" />
+    <title>Traveloka - Головна</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="carousel">
+        <div class="carousel__container">
+          <img src="images/caros1.png" alt="Slide 1" class="carousel__image" />
+          <img src="images/caros2.png" alt="Slide 2" class="carousel__image" />
+          <img src="images/caros3.png" alt="Slide 3" class="carousel__image" />
+          <img src="images/caros4.png" alt="Slide 3" class="carousel__image" />
+        </div>
+      </div>
+      <div class="upper-header">
+        <div class="container">
+          <div class="upper-header__flex">
+            <div class="header__logo">
+              <p class="header__logo-p">Traveloka</p>
+            </div>
+            <div class="upper-header__right">
+              <div class="nav navbar">
+                <ul class="nav__ul nav-menu">
+                  <li class="ul__li nav-item">
+                    <a href="" class="ul__li-a">Головна</a>
+                  </li>
+
+                  <li class="ul__li nav-item">
+                    <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn ul__li-a">
+                        Напрямки
+                      </button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <ul class="dropdown__ul">
+                          <li class="dropdown__li">
+                            <div class="inner__dropdown">
+                              <a class="inner__ul__li-a">Європа</a>
+                              <div class="inner__dropdown-content">
+                                <ul class="inner__dropdown__ul" id="europeList">
+                                  <li>
+                                    <a href="country.html?name=Ukraine"
+                                      >Україна</a
+                                    >
+                                  </li>
+
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=France"
+                                      class="inner__dropdown__li-a"
+                                      >Франція</a
+                                    >
+                                  </li>
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=Italy"
+                                      class="inner__dropdown__li-a"
+                                      >Італія</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="dropdown__li">
+                            <div class="inner__dropdown">
+                              <a class="inner__ul__li-a">Азія</a>
+                              <div class="inner__dropdown-content">
+                                <ul class="inner__dropdown__ul" id="europeList">
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=China"
+                                      class="inner__dropdown__li-a"
+                                      >Китай</a
+                                    >
+                                  </li>
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=Japan"
+                                      class="inner__dropdown__li-a"
+                                      >Японія</a
+                                    >
+                                  </li>
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=Korea"
+                                      class="inner__dropdown__li-a"
+                                      >Корея</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="dropdown__li">
+                            <div class="inner__dropdown">
+                              <a class="inner__ul__li-a">Африка</a>
+                              <div class="inner__dropdown-content">
+                                <ul class="inner__dropdown__ul" id="europeList">
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=Morocco"
+                                      class="inner__dropdown__li-a"
+                                      >Марокко</a
+                                    >
+                                  </li>
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=Tunisia"
+                                      class="inner__dropdown__li-a"
+                                      >Туніс</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="dropdown__li">
+                            <div class="inner__dropdown">
+                              <a class="inner__ul__li-a">Південна Америка</a>
+                              <div class="inner__dropdown-content">
+                                <ul class="inner__dropdown__ul" id="europeList">
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=Brazil"
+                                      class="inner__dropdown__li-a"
+                                      >Бразилія</a
+                                    >
+                                  </li>
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=Peru"
+                                      class="inner__dropdown__li-a"
+                                      >Перу</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="dropdown__li">
+                            <div class="inner__dropdown">
+                              <a class="inner__ul__li-a">Північна Америка</a>
+                              <div class="inner__dropdown-content">
+                                <ul class="inner__dropdown__ul" id="europeList">
+                                  <li class="inner__dropdown__li">
+                                    <a
+                                      href="country.html?name=USA"
+                                      class="inner__dropdown__li-a"
+                                      >США</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="dropdown__li">
+                            <a
+                              href="country.html?name=Australia"
+                              class="dropdown__li-a"
+                              >Австралія</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="ul__li nav-item">
+                    <a href="buy.html" class="ul__li-a">Замовити</a>
+                  </li>
+                  <li class="ul__li nav-item">
+                    <a href="about.html" class="ul__li-a">Про нас</a>
+                  </li>
+                  <li class="ul__li nav-item">
+                    <a href="contact.html" class="ul__li-a">Контакти</a>
+                  </li>
+                </ul>
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__slide"></div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section class="carrousel">
+        <div class="container">
+          <ul class="country-popular__flex" id="countryPopularPlaces">
+            <!-- Україна -->
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Ukraine">
+                <img
+                  class="country-popular__img"
+                  src="images/kyiv.jpg"
+                  alt="Київ"
+                />
+                <h3>Київ</h3>
+                <p>Столиця України</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Ukraine">
+                <img
+                  class="country-popular__img"
+                  src="images/lviv.jpg"
+                  alt="Львів"
+                />
+                <h3>Львів</h3>
+                <p>Культурний центр Західної України</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Ukraine">
+                <img
+                  class="country-popular__img"
+                  src="images/odesa.jpg"
+                  alt="Одеса"
+                />
+                <h3>Одеса</h3>
+                <p>Портове місто на Чорному морі</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Ukraine">
+                <img
+                  class="country-popular__img"
+                  src="images/kharkiv.jpg"
+                  alt="Харків"
+                />
+                <h3>Харків</h3>
+                <p>Велике місто на сході України</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Ukraine">
+                <img
+                  class="country-popular__img"
+                  src="images/chernihiv.jpg"
+                  alt="Чернігів"
+                />
+                <h3>Чернігів</h3>
+                <p>Стародавнє місто з багатою історією</p>
+              </a>
+            </li>
+            <!-- Франція -->
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=France">
+                <img
+                  class="country-popular__img"
+                  src="images/paris.jpg"
+                  alt="Париж"
+                />
+                <h3>Париж</h3>
+                <p>Столиця Франції</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=France">
+                <img
+                  class="country-popular__img"
+                  src="images/leon.jpg"
+                  alt="Ліон"
+                />
+                <h3>Ліон</h3>
+                <p>Відомий своїми історичними та архітектурними пам'ятками</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=France">
+                <img
+                  class="country-popular__img"
+                  src="images/marcel.jpg"
+                  alt="Марсель"
+                />
+                <h3>Марсель</h3>
+                <p>Велике портове місто</p>
+              </a>
+            </li>
+            <!-- Італія -->
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Italy">
+                <img
+                  class="country-popular__img"
+                  src="images/rome.jpg"
+                  alt="Рим"
+                />
+                <h3>Рим</h3>
+                <p>Столиця Італії, відома своїми древніми пам'ятками</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Italy">
+                <img
+                  class="country-popular__img"
+                  src="images/milan.jpg"
+                  alt="Мілан"
+                />
+                <h3>Мілан</h3>
+                <p>Модна столиця Італії</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Italy">
+                <img
+                  class="country-popular__img"
+                  src="images/venice.jpg"
+                  alt="Венеція"
+                />
+                <h3>Венеція</h3>
+                <p>Місто каналів</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Italy">
+                <img
+                  class="country-popular__img"
+                  src="images/florence.jpg"
+                  alt="Флоренція"
+                />
+                <h3>Флоренція</h3>
+                <p>Місто мистецтва та архітектури</p>
+              </a>
+            </li>
+            <!-- Китай -->
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=China">
+                <img
+                  class="country-popular__img"
+                  src="images/beijing.jpg"
+                  alt="Пекін"
+                />
+                <h3>Пекін</h3>
+                <p>Столиця Китаю</p>
+              </a>
+            </li>
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=China">
+                <img
+                  class="country-popular__img"
+                  src="images/shanghai.jpg"
+                  alt="Шанхай"
+                />
+                <h3>Шанхай</h3>
+                <p>Велике фінансове та торговельне місто</p>
+              </a>
+            </li>
+            <!-- Японія -->
+            <li class="country-popular__flex-li">
+              <a href="country.html?name=Japan">
+                <img
+                  class="country-popular__img"
+                  src="images/tokyo.jpg"
+                  alt="Токіо"
+                />
+                <h3>Токіо</h3>
+                <p>Столиця Японії</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="see__more">
+        <div class="container">
+          <a class="see__more-a" href="buy.html"
+            ><p class="see__more-p">Вибрати напрямок</p></a
+          >
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__flex">
+            <div class="footer__left">
+              <ul class="footer__ul">
+                <li class="footer__ul-li">
+                  <a class="footer__li-a" href="">TravelokaUA 2024-2024</a>
+                </li>
+                <li><a class="footer__li-a" href="">We want your money!</a></li>
+              </ul>
+            </div>
+            <div class="footer__right">
+              <ul class="footer__ul">
+                <li class="footer__ul-li">
+                  <a
+                    href="https://www.instagram.com/zelenskyy_official/"
+                    class="footer__li-a"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="footer__ul-li">
+                  <a
+                    href="https://www.facebook.com/zelenskyy.official/?locale=ru_RU"
+                    class="footer__li-a"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="footer__ul-li">
+                  <a
+                    href="https://www.youtube.com/@PresidentGovUa"
+                    class="footer__li-a"
+                    >Youtube</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

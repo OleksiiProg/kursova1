@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/buy.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="burger.css" />
+    <title>Замовлення</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <p class="header__logo-p">Traveloka</p>
+          <ul class="nav__ul nav-menu">
+            <li class="ul__li">
+              <a href="index.html" class="ul__li-a">Головна</a>
+            </li>
+
+            <li class="ul__li">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn ul__li-a">
+                  Напрямки
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <ul class="dropdown__ul">
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Європа</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li>
+                              <a href="country.html?name=Ukraine">Україна</a>
+                            </li>
+
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=France"
+                                class="inner__dropdown__li-a"
+                                >Франція</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Italy"
+                                class="inner__dropdown__li-a"
+                                >Італія</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Азія</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=China"
+                                class="inner__dropdown__li-a"
+                                >Китай</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Japan"
+                                class="inner__dropdown__li-a"
+                                >Японія</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Korea"
+                                class="inner__dropdown__li-a"
+                                >Корея</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Африка</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Morocco"
+                                class="inner__dropdown__li-a"
+                                >Марокко</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Tunisia"
+                                class="inner__dropdown__li-a"
+                                >Туніс</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Південна Америка</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Brazil"
+                                class="inner__dropdown__li-a"
+                                >Бразилія</a
+                              >
+                            </li>
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=Peru"
+                                class="inner__dropdown__li-a"
+                                >Перу</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <div class="inner__dropdown">
+                        <a class="inner__ul__li-a">Північна Америка</a>
+                        <div class="inner__dropdown-content">
+                          <ul class="inner__dropdown__ul" id="europeList">
+                            <li class="inner__dropdown__li">
+                              <a
+                                href="country.html?name=USA"
+                                class="inner__dropdown__li-a"
+                                >США</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="dropdown__li">
+                      <a
+                        href="country.html?name=Australia"
+                        class="dropdown__li-a"
+                        >Австралія</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="ul__li">
+              <a href="buy.html" class="ul__li-a">Замовити</a>
+            </li>
+            <li class="ul__li">
+              <a href="about.html" class="ul__li-a">Про нас</a>
+            </li>
+            <li class="ul__li">
+              <a href="contact.html" class="ul__li-a">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="form">
+      <div class="form-container">
+        <h1 class="form-container__h1">Замовити квиток</h1>
+        <form id="bookingForm">
+          <label class="form-container__label" for="continent"
+            >Континент:</label
+          >
+          <select
+            class="form-container__select"
+            id="continent"
+            name="continent"
+            required
+          >
+            <option value="">Оберіть континент</option>
+          </select>
+
+          <label class="form-container__label" for="country">Країна:</label>
+          <select
+            class="form-container__select"
+            id="country"
+            name="country"
+            required
+          >
+            <option class="form-container__option" value="">
+              Оберіть країну
+            </option>
+          </select>
+
+          <label for="name">Ваше ім'я:</label>
+          <input
+            class="form-container__input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label for="email">Ваш Email:</label>
+          <input
+            class="form-container__input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <button class="form-container__button" type="submit">
+            Підтвердити замовлення
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__left">
+            <ul class="footer__ul">
+              <li class="footer__ul-li">
+                <a class="footer__li-a" href="">TravelokaUA 2024-2024</a>
+              </li>
+              <li><a class="footer__li-a" href="">We want your money!</a></li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <ul class="footer__ul">
+              <li class="footer__ul-li">
+                <a
+                  href="https://www.instagram.com/zelenskyy_official/"
+                  class="footer__li-a"
+                  >Instagram</a
+                >
+              </li>
+              <li class="footer__ul-li">
+                <a
+                  href="https://www.facebook.com/zelenskyy.official/?locale=ru_RU"
+                  class="footer__li-a"
+                  >Facebook</a
+                >
+              </li>
+              <li class="footer__ul-li">
+                <a
+                  href="https://www.youtube.com/@PresidentGovUa"
+                  class="footer__li-a"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="country.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const continentSelect = document.getElementById("continent");
+        const countrySelect = document.getElementById("country");
+
+        // Додавання континентів у випадаючий список
+        continents.forEach((continent) => {
+          const option = document.createElement("option");
+          option.value = continent;
+          option.textContent = continent;
+          continentSelect.appendChild(option);
+        });
+
+        // Оновлення списку країн на основі вибору континенту
+        continentSelect.addEventListener("change", () => {
+          const selectedContinent = continentSelect.value;
+          countrySelect.innerHTML = '<option value="">Оберіть країну</option>';
+
+          if (selectedContinent) {
+            Object.values(countryData).forEach((country) => {
+              if (country.continent === selectedContinent) {
+                const option = document.createElement("option");
+                option.value = country.name;
+                option.textContent = country.name;
+                countrySelect.appendChild(option);
+              }
+            });
+          }
+        });
+
+        // Обробка форми та виведення вибраних даних
+        document
+          .getElementById("bookingForm")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const continent = continentSelect.value;
+            const country = countrySelect.value;
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+
+            // Виведення даних у алерт
+            alert(
+              `Ваше замовлення підтверджено!\nКонтинент: ${continent}\nКраїна: ${country}\nІм'я: ${name}\nEmail: ${email}`
+            );
+          });
+      });
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>
